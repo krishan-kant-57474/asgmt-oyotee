@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.checkbox {
+	--checkbox-color: #ffffff;
+	/* Set the checkbox color to white */
+}
+
+.checkbox input[type="checkbox"] {
+	appearance: none;
+	/* Remove the default checkbox appearance */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+	background-color: var(--checkbox-color);
+	/* Set the background color to white */
+}
+
+.checkbox input[type="checkbox"]:checked {
+	background-color: #ffffff;
+	/* Set the background color to white when checked */
+}
